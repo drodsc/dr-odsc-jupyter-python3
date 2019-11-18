@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+    {% block body %}
+
+<center>
+        <h4 class= "container">
+                <b>Fill out the form and get our prediction!</b>
+                <br/><br/>  
+        </h4>
+</center>
+
+{% from "includes/_formhelpers.html" import render_selection_field, render_field %}
+<form method="post">
+
+<div class="row">
+    {{ render_field(form.race) }}
+    {{ render_field(form.gender) }}
+    {{ render_field(form.age) }}
+    
+    </div>
+<div class="row">
+    {{ render_field(form.weight) }}
+    {{ render_field(form.admission_type) }}
+    {{ render_field(form.discharge_disposition) }}
+</div>
+<br/>
+<div class="row">
+        {{ render_field(form.admission_source) }}
+        {{ render_field(form.times_in_hospital) }}
+        {{ render_field(form.num_procedure) }}
+</div>
+
+<div class="row">
+    {{ render_field(form.payer_code) }}
+    {{ render_field(form.medical_specialty) }}
+    {{ render_field(form.num_lab_procedure) }}
+    
+</div>
+<br/>
+<br/>
+<center><button class="btn btn-secondary">Submit</button></center>
+  {% if pred is defined %}
+      <b>Prediction:</b> {{pred}}
+  {% endif %}
+    </form>
+</br>
+    {%endblock%}
