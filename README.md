@@ -110,3 +110,7 @@ Copy/paste this URL into your browser when you connect for the first time,
 
     to login with a token:
         http://localhost:8890/?token=<your token>
+
+## 4. How To Get DataRobot Cloud Account
+
+	http://tiny.cc/datarobot 
