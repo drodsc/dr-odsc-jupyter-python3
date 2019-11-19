@@ -113,5 +113,4 @@ Copy/paste this URL into your browser when you connect for the first time,
 
 ## 4. How To Get DataRobot Cloud Account
 
-	http://tiny.cc/datarobot 
-	[DataRobot](http://tiny.cc/datarobot )
+[DataRobot](http://tiny.cc/datarobot)
